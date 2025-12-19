@@ -92,7 +92,7 @@ export default function ProjectsPage() {
   const closeModal = () => {
     setActiveProject(null);
     setActiveMedia(null);
-  };
+  };//comentario
 
   return (
     <>
