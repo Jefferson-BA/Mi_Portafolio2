@@ -10,7 +10,7 @@ export const skills = [
     image: js,
   },
   {
-    name: "PostgreSQL",
+    name: "postgreSQL",
     image: postgres,
   },
   {

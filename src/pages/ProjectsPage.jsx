@@ -51,7 +51,7 @@ export default function ProjectsPage() {
       title: "MetroLima GO",
       subtitle: "App móvil de rutas del Metro",
       description:
-        "Aplicación Android para la planificación de rutas usando mapas interactivos.",
+        "Aplicación Android para la planificación de rutas usando mapas interactivos..",
       tech: ["Kotlin", "Jetpack Compose", "Room", "Google Maps API", "Figma"],
       icon: <Smartphone />,
       video: metrolimaVideo,
