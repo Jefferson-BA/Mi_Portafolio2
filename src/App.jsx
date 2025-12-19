@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Hero from "./components/Hero";
+import ProjectsPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ProyectCard from "./components/ProyectCard";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-black min-h-screen text-white">
+      <Navbar />
+
+      <main>
+        {/* HOME */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* SKILLS / HERRAMIENTAS */}
+        <section id="skills">
+          <ProyectCard />
+        </section>
+
+        {/* LANDING */}
+        <section id="landing">
+          <LandingPage />
+        </section>
+
+        {/* ABOUT */}
+        <section id="about">
+          <AboutPage />
+        </section>
+
+        {/* PROJECTS */}
+        <section id="projects">
+          <ProjectsPage />
+        </section>
+
+        {/* CONTACT */}
+        <section id="contact">
+          <ContactPage />
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
